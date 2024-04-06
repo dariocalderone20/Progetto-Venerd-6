@@ -1,0 +1,5 @@
+Il primo script è un tentativo di attacco SQL di tipo Union-based Injection. In poche parole, cerca di combinare i risultati di due query diverse. La prima query restituisce una singola riga con due colonne, contenente il valore 1 nella prima colonna e 2 nella seconda colonna. La seconda query potrebbe essere una qualsiasi, potenzialmente usata per ottenere informazioni sensibili dal database. Il commento "#" indica che tutto ciò che segue non sarà interpretato come codice SQL.
+Nel secondo script la prima query "version" restituirà la versione del database MySQL e la seconda query "database" restituirà il nome del database corrente.
+Con il terzo script si cerca di risalire ai nomi delle tabelle nel database DVWA.
+Con il quarto script si possono recuperare user e password dalla tabella "users".
+Nell'ultima parte, dopo aver ottenuto le hash delle password, con Jhon the Ripper è possibile decriptarle e, di conseguenza, visualizzarele in chiaro.
